@@ -25,25 +25,31 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         console.log('navClose element not found');
     }
-}
 
+    /*=============== REMOVE MENU MOBILE ===============*/
+    const navLink = document.querySelectorAll('.nav__link')
 
-/*=============== REMOVE MENU MOBILE ===============*/
+    const linkAction = () => {
+        const navMenu = document.getElementById('nav-menu')
 
+        // Clicking on each nav__link, we remove the show-menu class
+        navMenu.classList.remove('show-menu')
+    }
 
-/*=============== ADD BLUR TO HEADER ===============*/
+    navLink.forEach(n => n.addEventListener('click', linkAction))
 
+    /*=============== ADD BLUR TO HEADER ===============*/
+    // Add your code here
 
-/*=============== EMAIL JS ===============*/
+    /*=============== EMAIL JS ===============*/
+    // Add your code here
 
+    /*=============== SHOW SCROLL UP ===============*/ 
+    // Add your code here
 
-/*=============== SHOW SCROLL UP ===============*/ 
+    /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+    // Add your code here
 
-
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-
-
-/*=============== SCROLL REVEAL ANIMATION ===============*/
-
-
-);
+    /*=============== SCROLL REVEAL ANIMATION ===============*/
+    // Add your code here
+});
