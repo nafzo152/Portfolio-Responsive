@@ -203,7 +203,8 @@ svg {
     height: 100%;
     padding: 4.5rem 0 0 3rem;
     backdrop-filter: blur(24px);
-    
+    -webkit-backdrop-filter: blur(24px);   /* For Safari Browser*/
+
   }
 }
 
