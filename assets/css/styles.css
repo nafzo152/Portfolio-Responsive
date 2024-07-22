@@ -194,10 +194,10 @@ svg {
 /* Navigation for mobile devices */
 
 @media screen and (max-width: 1023px){
-  .nav__menu{
+  .nav__menu {
     position: fixed;
-    top: -100%;
-    right: 0;
+    top: 0;
+    right: -100%; /* Off-screen initially */
     background-color: hsla(0, 0%, 10%, .3);
     width: 75%;
     height: 100%;
@@ -205,7 +205,12 @@ svg {
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);   /* For Safari Browser*/
     transition: right .4s;
-  }
+}
+
+/* When show-menu class is added */
+.show-menu {
+    right: 0; /* Bring it on-screen */
+}
 }
 
 .nav__list{

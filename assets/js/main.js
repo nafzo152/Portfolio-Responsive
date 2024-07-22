@@ -1,23 +1,32 @@
-/*=============== SHOW MENU ===============*/
-const navMenu = document.getElementById('nav-menu'),
-      navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close')
+document.addEventListener('DOMContentLoaded', () => {
+    /*=============== SHOW MENU ===============*/
+    const navMenu = document.getElementById('nav-menu'),
+          navToggle = document.getElementById('nav-toggle'),
+          navClose = document.getElementById('nav-close')
 
-/*=============== MENU SHOW ===============*/
-/* Validate if navToggle Exists */
-if (navToggle) {
-    navToggle.addEventListener('click', () => {
-        navMenu.classList.add('show-menu')
-    })
-}
+    /*=============== MENU SHOW ===============*/
+    /* Validate if navToggle Exists */
+    if (navToggle) {
+        navToggle.addEventListener('click', () => {
+            console.log('Toggle clicked'); // Debugging log
+            navMenu.classList.add('show-menu')
+        })
+    } else {
+        console.log('navToggle element not found');
+    }
 
-/*=============== MENU HIDDEN ===============*/
-/* Validate if navClose Exists */
-if (navClose) {
-    navClose.addEventListener('click', () => {
-        navMenu.classList.remove('show-menu')
-    })
-}
+    /*=============== MENU HIDDEN ===============*/
+    /* Validate if navClose Exists */
+    if (navClose) {
+        navClose.addEventListener('click', () => {
+            console.log('Close clicked'); // Debugging log
+            navMenu.classList.remove('show-menu')
+        })
+    } else {
+        console.log('navClose element not found');
+    }
+});
+
 
 /*=============== REMOVE MENU MOBILE ===============*/
 
