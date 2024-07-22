@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         console.log('navClose element not found');
     }
-});
+}
 
 
 /*=============== REMOVE MENU MOBILE ===============*/
@@ -44,3 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+
+
+);
