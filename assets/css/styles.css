@@ -204,9 +204,27 @@ svg {
     padding: 4.5rem 0 0 3rem;
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);   /* For Safari Browser*/
-
+    transition: right .4s;
   }
 }
+
+.nav__list{
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+
+.nav__link{
+  color:var(--title-color);
+  font-weight: var(--font-medium);
+  transition: color .4s;
+}
+
+.nav__link:hover{
+  color: var(--first-color);  
+}
+
+
 
 /* Show menu */
 
